@@ -14,18 +14,18 @@ import csc220
 #print ("textbox contains <b>{}</b> <br>".format( textbox ))
 #print ("textarea contains <b>{}</b> <br>".format( textarea ))
 
-<html>
-<body>
+print("<html>")
+print("<body>")
 
-<svg width="1000" height="1000">
-   print_thick_circle()
-   print_rectangle()
-   print_thin_circle()
-   print_text()
-</svg> 
+print("<svg width="1000" height="1000">")
+print_thick_circle()
+print_rectangle()
+print_thin_circle()
+print_text()
+print("</svg>") 
  
-</body>
-</html>
+print("</body>")
+print("</html>")
 
 def print_thick_circle():
   print("<circle cx=200 cy=525 r=50 stroke="red" stroke-width=10 fill=none />")
