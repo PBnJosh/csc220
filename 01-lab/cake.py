@@ -13,6 +13,17 @@ import csc220
 
 #print ("textbox contains <b>{}</b> <br>".format( textbox ))
 #print ("textarea contains <b>{}</b> <br>".format( textarea ))
+def print_thick_circle():
+  print("<circle cx=200 cy=525 r=50 stroke=red stroke-width=10 fill=none />")
+
+def print_rectangle():
+  print("<rect width=300 height=100 x=350 y=475 fill=blue />")
+
+def print_thin_circle():
+  print("<circle cx=800 cy=525 r=50 stroke=green stroke-width=2 fill=none />")
+
+def print_text():
+  print("<text x=465 y=530>Josh Loftus</text>")
 
 print("<html>")
 print("<body>")
@@ -26,18 +37,6 @@ print("</svg>")
  
 print("</body>")
 print("</html>")
-
-def print_thick_circle():
-  print("<circle cx=200 cy=525 r=50 stroke=red stroke-width=10 fill=none />")
-
-def print_rectangle():
-  print("<rect width=300 height=100 x=350 y=475 fill=blue />")
-
-def print_thin_circle():
-  print("<circle cx=800 cy=525 r=50 stroke=green stroke-width=2 fill=none />")
-
-def print_text():
-  print("<text x=465 y=530>Josh Loftus</text>")
 
 # I honor Parkland's core values by affirming that I have 
 # followed all academic integrity guidelines for this work.
