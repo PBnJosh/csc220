@@ -17,7 +17,7 @@ import csc220
 print("<html>")
 print("<body>")
 
-print("<svg width="1000" height="1000">")
+print("<svg width=1000 height=1000>")
 print_thick_circle()
 print_rectangle()
 print_thin_circle()
