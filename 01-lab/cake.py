@@ -39,4 +39,9 @@ def print_thin_circle():
 def print_text():
   print("<text x=465 y=530>Josh Loftus</text>")
 
+# I honor Parkland's core values by affirming that I have 
+# followed all academic integrity guidelines for this work.
+
+# Josh Loftus 
+# there is nothing below here!
 
