@@ -40,8 +40,8 @@ def print_circles( num_circles ):
     color = rand_color()
     point = rand_point()
     radius = randint( 1, 50 )
-    circle = circle.Circle( point, radius, color )
-    print(circle.SVG())
+    c = circle.Circle( point, radius, color )
+    print(c.SVG())
 
 print ('<svg height="1000" width="1000">')
 print_circles( 1000 )
