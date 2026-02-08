@@ -26,4 +26,4 @@ class Circle :
     return self._radius
 
   def SVG( self ):
-    return f"<circle r={self._radius} cx={self.center.getAcross()} cy={self.center.getDown()} fill={self.fill.SVG()} />"
+    return f'<circle r={self._radius} cx={self._center.getAcross()} cy={self._center.getDown()} fill="{self._fill.SVG()}" />'
