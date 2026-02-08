@@ -1,4 +1,4 @@
-Class color :
+class color :
   def __init__( self ):
     self._red = 0
     self._green = 0

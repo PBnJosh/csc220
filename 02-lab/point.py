@@ -1,4 +1,4 @@
-Class point :
+class point :
   def __init__( self ):
     self._across = 0
     self._down = 0
