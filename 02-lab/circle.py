@@ -1,7 +1,7 @@
 import point
 import color
 
-class circle :
+class Circle :
   def __init__( self, center, radius, fill ):
     self._center = center
     self._fill = fill
