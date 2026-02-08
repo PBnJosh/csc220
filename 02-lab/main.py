@@ -21,18 +21,18 @@ from random import randint
 
 # returns a color object with a random rgb value
 def rand_color():
-  color = color.Color()
-  color.setRed(randInt(0,255))
-  color.setGreen(randInt(0,255))
-  color.setBlue(randInt(0,255))
-  return color
+  fill = color.Color()
+  fill.setRed(randInt(0,255))
+  fill.setGreen(randInt(0,255))
+  fill.setBlue(randInt(0,255))
+  return fill
 
 # returns a point object with random x and y coords
 def rand_point():
-  point = point.Point()
-  point.setAcross(randInt(0,1000))
-  point.setDown(randInt(0,1000))
-  return point
+  coord = point.Point()
+  coord.setAcross(randInt(0,1000))
+  coord.setDown(randInt(0,1000))
+  return coord
 
 # prints num_circles circles to the svg canvas
 def print_circles( num_circles ):
