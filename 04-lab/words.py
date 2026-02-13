@@ -32,12 +32,27 @@ words.sort()
 
 print(f"<p> There are {num_words} words in this input. </p>")
 print(f"<p> The average length of the words in this input is {avg_word_len}. </p>")
-print(words)
 
 # Print first 100 words from sorted list into a 10x10 grid
-for i in range(10):
-    start = i * 10
-    print (f"<p> {words[start : start + 10]} </p>")
+# for i in range(10):
+#     start = i * 10
+#     print (f"<p> {words[start : start + 10]} </p>")
+print('<style> table, th, td { border:1px solid black; } </style>')
+print('<table style="width:100%">')
+
+for row in range(10):
+    
+    print('<tr>')
+
+    idx_min = row * 10
+    idx_max = idx_min + 10
+
+    for idx in range(idx_min, idx_max):
+        print(f'<td> {words[idx]} </td>')
+
+    print('</tr>')
+
+print('</table>')
 
 
 
