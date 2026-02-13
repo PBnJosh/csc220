@@ -14,14 +14,24 @@ csc220.showForm("This is the comment on the form area.")
 # print ("textbox contains <b>{}</b> <br>".format( textbox ))
 # print ("textarea contains <b>{}</b> <br>".format( textarea ))
 
+# Take in input, split words by " ", make an array of the word lengths, 
+# and calculate the average length
 textarea = csc220.getInput('textarea')
-words = textarea.split()
+
+# words = textarea.split()
+
+# FOR TESTING
+words = ["rhubarb", "bathroom", "apple", "syzygy", "No", "Institution", "miata", "popcorn", 
+         "Lamp", "vaseline", "USB", "bird", "Devil", "Illinois", "water", "pencil", "taxes"]
+
 num_words = len(words)
 word_lengths = [ len(word) for word in words ]
 avg_word_len = statistics.mean(word_lengths)
 
 print(f"There are {num_words} words in this input.")
 print(f"The average length of the words in this input is {avg_word_len}.")
+
+
 
 
 
