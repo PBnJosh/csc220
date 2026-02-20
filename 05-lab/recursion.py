@@ -39,8 +39,11 @@ visited = set()
 
 print(f"Winnable path: { path_can_win(0) }.")
 path.reverse()
+print()
 print(f"path: {path}")
+print()
 print(f'visited: {visited}')
+print()
 print(f'board: {board}')
 
 
