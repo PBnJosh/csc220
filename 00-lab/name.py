@@ -1,7 +1,7 @@
 #!/usr/local/bin/python3
 import sys
 sys.path.append('/home/staff/kurban/python')
-import csc220
+# import csc220
 
 print("My username is jloftus7")
 
