@@ -68,7 +68,7 @@ for i in range(num_lists):
     tuples.append( (size, count) )
 print(tuples)
 
-with open('data.csv', 'w') as csvfile:
+with open('quicksort_data.csv', 'w') as csvfile:
     ghost_writer = csv.writer(csvfile)
     ghost_writer.writerow( ["List Size", "List Accesses"] )
     ghost_writer.writerows(tuples)
