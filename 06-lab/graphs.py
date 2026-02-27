@@ -62,7 +62,7 @@ tuples = []
 
 for i in range(num_lists):
     count = 0
-    size = random.randint(1000, 5000)
+    size = random.randint(10000, 30000)
     l = make_list(size, minimum, maximum)
     quicksort(l, 0, len(l) - 1)
     tuples.append( (size, count) )
