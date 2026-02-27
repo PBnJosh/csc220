@@ -13,7 +13,6 @@ textarea = csc220.getInput('textarea')
 
 # print ("textbox contains <b>{}</b> <br>".format( textbox ))
 # print ("textarea contains <b>{}</b> <br>".format( textarea ))
-textarea = "NAME\nx<-8\nDUMP"
 
 dictionary = {}
 
