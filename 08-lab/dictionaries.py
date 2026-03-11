@@ -13,7 +13,7 @@ textarea = csc220.getInput('textarea')
 
 # print ("textbox contains <b>{}</b> <br>".format( textbox ))
 # print ("textarea contains <b>{}</b> <br>".format( textarea ))
-
+    
 dictionary = {}
 
 # takes a string of the format "x<-6" and adds or modifies the entry in the dictionary
