@@ -1,4 +1,3 @@
-
 # Ken Urban's module for csc220 
 # TODO:
 #    to incorporate forms using the GET method
@@ -41,7 +40,7 @@ def showForm(comment='Sample Comment', method='POST'):
     print("<p>CSC220 form version {}.  Run on {}.  Note that there is NO PROTECTION from HTML Injections</p>".format( _version, today ))
     print("<p>{}</p>".format( comment )) 
     print("</div>")
-    
+
 
     print("<div class='w3-container w3-cell w3-khaki w3-card-4 ' >")
     print("<table align='center' cellpadding='4' bgcolor='khaki'>")
