@@ -90,14 +90,14 @@ print('</table>')
 
 print('<p> Huffman Codes: </p>')
 print('<style> table, th, td { border:1px solid black; } </style>')
-print('<table style="width:5%">')
+print('<table style="width:10%">')
 
 code_keys = codes.keys()
 for key in code_keys:
     
     print('<tr>')
 
-    print(f'<td> {key} : {codes[key]} </td>')
+    print(f'<td> [{key}] : {codes[key]} </td>')
 
     print('</tr>')
 

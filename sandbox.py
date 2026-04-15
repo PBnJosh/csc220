@@ -1,20 +1,29 @@
 #!/usr/local/bin/python3
 
-s = "G J D C L B A F I H K E"
-arr = s.split()
-pivot = arr[len(arr) - 1]
-left = 0;
-right = len(arr) - 2
-	
-while (left <= right):
-    swap = True
-    if (arr[left] < pivot):
-        left += 1
-        swap = False
-    if (arr[right] > pivot):
-        right -= 1
-        swap = False
-    if (swap):
-        arr[left], arr[right] = arr[right], arr[left]
-arr[left], arr[len(arr) - 1] = arr[len(arr) - 1], arr[left]
-print(arr)
+inf = int(1e8)
+dist = [[ 0, inf,  1, inf, inf, inf],
+ [inf,  0, inf, inf,  2,  7],
+ [ 9, inf,  0,  7, inf,  6],
+ [inf, inf, inf,  0,  2,  7],
+ [ 4,  2,  9, inf,  0,  3],
+ [ 4,  3, inf, inf, inf,  0]]
+V = len(dist)
+
+
+# for each intermediate vertex
+for k in range(V):
+
+  # Pick all vertices as source one by one
+  for i in range(V):
+
+    # Pick all vertices as destination
+    # for the above picked source
+    for j in range(V):
+
+      # shortest path from i to j 
+      if dist[i][k] != inf and dist[k][j] != inf:
+        dist[i][j] = min(dist[i][j],
+                         dist[i][k] + dist[k][j])
+
+for row in dist:
+    print(row)
